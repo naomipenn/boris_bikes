@@ -1,9 +1,7 @@
 require 'docking_station_class'
 
-describe 'DockingStation' do
-#it 'DockingStation instances to respond to method release_bike' do
-it {expect(DockingStation.new.release_bike).to eq true}
-#end
+describe DockingStation do
+it { is_expected.to respond_to :release_bike }
 
 
 end
