@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-describe 'DockingStation' do
-
-end
-
-#testing testing
-=======
 require 'docking_station_class'
 
 describe 'DockingStation' do
+#it 'DockingStation instances to respond to method release_bike' do
+it {expect(DockingStation.new.release_bike).to eq true}
+#end
+
 
 end
->>>>>>> 1c6029398d04022073087e99d41b0a53ec01bfc2
