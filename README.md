@@ -9,3 +9,5 @@ It will track for users:
 - Availability
 
 (TBC)
+
+Tuesday
