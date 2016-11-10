@@ -9,7 +9,7 @@ it "releases a bike" do
 end
 
 it "releases a bike that works" do
-  expect(DockingStation.new.release_bike.working?).to eq true
+  expect(DockingStation.new.release_bike).to be_working
 end
 
 
