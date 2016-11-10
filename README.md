@@ -4,4 +4,4 @@ a program that will emulate all the docking stations, bikes, and infrastructure 
 
 ###### How to use  
 
-to be continued
+thurs
