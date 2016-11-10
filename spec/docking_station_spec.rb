@@ -17,5 +17,9 @@ it 'docks something' do
   expect(subject.dock(bike)).to eq bike
 end
 
+it "raises an error when dock empty" do
+expect { subject.empty? }.to raise_error
+end
+
 
 end

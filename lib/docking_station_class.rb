@@ -10,4 +10,8 @@ class DockingStation
   end
 
   attr_reader :bike
+
+  def empty?
+  end
+
 end
