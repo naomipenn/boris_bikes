@@ -35,8 +35,14 @@ it 'raises an error when no bikes are available' do
 # end
 
 it 'has a default capacity of 20 bikes' do
-  20.times {subject.dock Bike.new}
-  expect { subject.dock Bike.new }.to raise_error "Docking station is full"
+  station2 = DockingStation.new
+  20.times {station2.dock Bike.new}
+  expect { station2.dock Bike.new }.to raise_error "Docking station is full"
+end
+
+it 'allows specification of larger capacity' do
+  station2 = DockingStation.new(22)
+  expect(station2.capacity).to eq 22
 end
 
 end
