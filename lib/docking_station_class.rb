@@ -2,6 +2,8 @@ require_relative "bike_class"
 
 class DockingStation
 
+  DEFAULT_CAPACITY = 20
+
   attr_accessor :bikes
 
   def initialize
@@ -18,10 +20,6 @@ class DockingStation
     @bikes.pop
   end
 
-  def capacity
-    20
-  end
-
   private
 
   def empty?
@@ -29,7 +27,7 @@ class DockingStation
   end
 
   def full?
-  @bikes.length >= capacity
+  @bikes.length >= DEFAULT_CAPACITY
   end
 
 
